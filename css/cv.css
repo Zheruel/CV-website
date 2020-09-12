@@ -1,0 +1,33 @@
+body{
+    font-family: 'Mulish', sans-serif;
+    height: 5000px;
+    color: #F2F2F2;
+}
+
+#sidebarContainer{
+    background-color: #313638;
+    max-width: 20vw;
+    height: 100vh;
+}
+
+#authorImage{
+    max-width: 12em;
+}
+
+#sidebarHeader{
+    margin-bottom: 15em;
+}
+
+#test{
+    color: red;
+}
+
+#siteContent{
+    margin-left: 20vw;
+}
+
+@media (max-width: 768px) { 
+    #sidebarContainer{
+        max-width: 30vw;
+    }
+}
