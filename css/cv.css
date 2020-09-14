@@ -1,12 +1,28 @@
+html {
+    scroll-behavior: smooth;
+  }
+
 body{
-    font-family: 'Mulish', sans-serif;
     height: 5000px;
     color: #F2F2F2;
 }
 
+a{
+    color: #F2F2F2;
+}
+
+a:hover{
+    color: #6C6C6C;
+}
+
+#navList{
+    list-style-type: none;
+    font-size: 25px;
+}
+
 #sidebarContainer{
     background-color: #313638;
-    max-width: 20vw;
+    max-width: 18vw;
     height: 100vh;
 }
 
@@ -15,7 +31,8 @@ body{
 }
 
 #sidebarHeader{
-    margin-bottom: 15em;
+    margin-top: 10em;
+    margin-bottom: 10em;
 }
 
 #test{
@@ -23,7 +40,7 @@ body{
 }
 
 #siteContent{
-    margin-left: 20vw;
+    margin-left: 18vw;
 }
 
 @media (max-width: 768px) { 
