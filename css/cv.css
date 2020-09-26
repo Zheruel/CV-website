@@ -44,8 +44,13 @@ a:hover{
 }
 
 #siteContent{
+    background-color: #1f2324;
     margin-left: 16vw;
     padding: 0;
+}
+
+#about{
+    height: 100vh;
 }
 
 #mobileNav{
