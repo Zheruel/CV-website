@@ -1,6 +1,10 @@
+.wow {
+    visibility: hidden;
+}
+
 html {
     scroll-behavior: smooth;
-  }
+}
 
 body{
     height: 5000px;
@@ -18,11 +22,12 @@ a:hover{
 #navList{
     list-style-type: none;
     font-size: 25px;
+    margin-bottom: 5em;
 }
 
 #sidebarContainer{
     background-color: #313638;
-    max-width: 18vw;
+    max-width: 16vw;
     height: 100vh;
 }
 
@@ -31,19 +36,23 @@ a:hover{
 }
 
 #sidebarHeader{
-    margin-top: 10em;
-    margin-bottom: 10em;
+    margin-bottom: 5em;
 }
 
 #test{
-    color: red;
+    color: black;
 }
 
 #siteContent{
-    margin-left: 18vw;
+    margin-left: 16vw;
+    padding: 0;
 }
 
-@media (max-width: 768px) { 
+#mobileNav{
+    display: none;
+}
+
+@media (max-width: 1024px) { 
     #sidebarContainer{
         max-width: 30vw;
     }

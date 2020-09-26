@@ -25,8 +25,8 @@
     />
     <!-- Animate -->
     <link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
     />
     <!-- Custom CSS -->
     <link rel="stylesheet" href="css/cv.css" />
@@ -36,10 +36,11 @@
     <div class="container-fluid">
       <div class="row">
         <div
-          class="col fixed-top d-flex d-column justify-content-center"
+          class="col fixed-top d-flex d-column justify-content-center align-items-center"
           id="sidebarContainer"
         >
           <nav id="navBar">
+
             <div class="text-center" id="sidebarHeader">
               <img
                 class="img-fluid rounded-circle mb-1"
@@ -48,11 +49,11 @@
                 id="authorImage"
               />
               <h3>Tin Zeljar</h3>
-              <h5>Full stack software engineer</h5>
+              <h5>Full Stack Software Engineer</h5>
               <button
                 type="button"
-                class="btn btn-outline-default btn-lg animate__animated animate__bounce animate__delay-2s"
-                style="border-radius: 30px; width: 13em;"
+                class="btn btn-outline-yellow btn-lg"
+                style="border-radius: 30px; width: 13em"
               >
                 Get my CV
               </button>
@@ -60,58 +61,68 @@
 
             <ul class="list-group text-center" id="navList">
               <li class="py-2">
-                <a href="#" class="text-decoration-none"
-                  >ABOUT</a
-                >
+                <a href="#" class="text-decoration-none">ABOUT</a>
               </li>
               <li class="py-2">
-                <a href="#" class="text-decoration-none"
-                  >EXPERIENCE</a
-                >
+                <a href="#" class="text-decoration-none">EXPERIENCE</a>
               </li>
               <li class="py-2">
-                <a href="#" class="text-decoration-none"
-                  >PROJECTS</a
-                >
+                <a href="#" class="text-decoration-none">PROJECTS</a>
               </li>
               <li class="py-2">
-                <a href="#" class="text-decoration-none"
-                  >EDUCATION</a
-                >
+                <a href="#" class="text-decoration-none">EDUCATION</a>
               </li>
             </ul>
+
+            <div class="d-flex flex-row justify-content-center" id="iconContainer">
+              <i class="mr-3 fab fa-github fa-3x"></i>
+              <i class="fas fa-envelope fa-3x"></i>
+            </div>
           </nav>
         </div>
 
-        <div id="siteContent">
-          <nav class="navbar navbar-expand-lg">
-            <a class="navbar-brand">Tin Zeljar</a>
+        <div class="col" id="siteContent">
+          <!--Navbar-->
+          <nav class="navbar navbar-expand-lg navbar-dark special-color-dark" id="mobileNav">
+            
+            <!-- Collapse button -->
             <button
               class="navbar-toggler"
               type="button"
               data-toggle="collapse"
-              data-target="#navbarSupportedContent"
-              aria-controls="navbarSupportedContent"
+              data-target="#basicExampleNav"
+              aria-controls="basicExampleNav"
               aria-expanded="false"
               aria-label="Toggle navigation"
             >
               <span class="navbar-toggler-icon"></span>
             </button>
 
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <!-- Collapsible content -->
+            <div class="collapse navbar-collapse">
+              <!-- Links -->
               <ul class="navbar-nav mr-auto">
                 <li class="nav-item">
-                  <a class="nav-link" href="#"
-                    >Home <span class="sr-only">(current)</span></a
-                  >
+                  <a class="nav-link" href="#">About</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#">Link</a>
+                  <a class="nav-link" href="#">Experience</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Projects</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Education</a>
                 </li>
               </ul>
             </div>
           </nav>
-          <h1 id="test">Test</h1>
+          <!-- Navbar -->
+
+          <div class="container-fluid">
+            <h1 class="text-center" id="test">Test</h1>
+          </div>
+
         </div>
       </div>
     </div>
@@ -137,8 +148,5 @@
     src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/js/mdb.min.js"
   ></script>
   <!-- Custom javascript -->
-  <script
-    type="text/javascript"
-    src="/js/scripts.js"
-  ></script>
+  <script type="text/javascript" src="/js/scripts.js"></script>
 </html>
