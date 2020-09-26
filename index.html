@@ -32,7 +32,7 @@
     <link rel="stylesheet" href="css/cv.css" />
     <title>Tin Zeljar - Portfolio</title>
   </head>
-  <body>
+  <body data-spy="scroll" data-target="navList" data-offset="50">
     <div class="container-fluid">
       <div class="row">
         <div
@@ -60,10 +60,10 @@
 
             <ul class="list-group text-center" id="navList">
               <li class="py-2">
-                <a href="#" class="text-decoration-none">ABOUT</a>
+                <a href="#about" class="text-decoration-none" id="aboutItem">ABOUT</a>
               </li>
               <li class="py-2">
-                <a href="#" class="text-decoration-none">EXPERIENCE</a>
+                <a href="#experience" class="text-decoration-none" id="experienceItem">EXPERIENCE</a>
               </li>
               <li class="py-2">
                 <a href="#" class="text-decoration-none">PROJECTS</a>
@@ -84,7 +84,7 @@
           </nav>
         </div>
 
-        <div class="col" id="siteContent">
+        <div class="col" id="siteContent">  
           <nav
             class="navbar navbar-expand-lg navbar-dark special-color-dark"
             id="mobileNav"
@@ -103,10 +103,10 @@
             <div class="collapse navbar-collapse">
               <ul class="navbar-nav mr-auto">
                 <li class="nav-item">
-                  <a class="nav-link" href="#">About</a>
+                  <a class="nav-link" href="#about">About</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#">Experience</a>
+                  <a class="nav-link" href="#experience">Experience</a>
                 </li>
                 <li class="nav-item">
                   <a class="nav-link" href="#">Projects</a>
@@ -130,12 +130,106 @@
               >
                 <a href="https://github.com/Zheruel"><i class="mr-2 fab fa-github fa-3x"></i></a>
                 <a href="https://hr.linkedin.com/in/tin-zeljar-916b9615a"><i class="mr-2 fab fa-linkedin fa-3x"></i></a>
-                <a href="mailto:tinzeljar@gmail.com"><i class="fas fa-envelope fa-3x"></i></a>
               </div>
             <br>
               <a href="123"><button type="button" class="btn btn-outline-yellow btn-lg">Download my CV</button></a>
             </div>
-            <p class="lead wow fadeIn" data-wow-delay="1.2s">I'm an experienced Full Stack Software Developer that has  maintained, developed and launched multiple projects from scratch.</p>
+            <p class="lead wow fadeIn" data-wow-delay="1.2s">
+              I'm an experienced Full Stack Software Developer that has  maintained, developed and 
+              launched multiple projects from scratch.
+            </p>
+
+            <div class="row">
+              <div class="col">
+                <table class="table table-borderless white-text wow fadeIn" data-wow-delay="1.6s">
+                  <thead>
+                    <tr>
+                      <th scope="col" class="yellow-text">Frontend</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>HTML/CSS (Bootstrap)</td>
+                    </tr>
+                    <tr>
+                      <td>Javascript (JQuery)</td>
+                    </tr>
+                    <tr>
+                      <td>Angular</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+
+              <div class="col">
+                <table class="table table-borderless white-text wow fadeIn" data-wow-delay="2s">
+                  <thead>
+                    <tr>
+                      <th scope="col" class="yellow-text">Backend/Desktop</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>C (C++)</td>
+                    </tr>
+                    <tr>
+                      <td>C# (.NET Core, Entity Framework)</td>
+                    </tr>
+                    <tr>
+                      <td>Python</td>
+                    </tr>
+                    <tr>
+                      <td>SQL (MS SQL, MySQL)</td>
+                    </tr>
+                    <tr>
+                      <td>PHP</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+
+              <div class="col">
+                <table class="table table-borderless white-text wow fadeIn" data-wow-delay="2.4s">
+                  <thead>
+                    <tr>
+                      <th scope="col" class="yellow-text">Other</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>Git (SourceTree, GitHub, Azure, Git Flow)</td>
+                    </tr>
+                    <tr>
+                      <td>Visual Studio, VS Code, PyCharm</td>
+                    </tr>
+                    <tr>
+                      <td>CLI (Angular)</td>
+                    </tr>
+                    <tr>
+                      <td>Driver's licence</td>
+                    </tr>
+                    <tr>
+                      <td>Material Design, Ant Design</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+
+          <div class="d-flex flex-column justify-content-center container" id="experience">
+            <h1 class="wow fadeIn" data-wow-delay="0.4s">Experience</h1>
+            <br>
+            <div class="wow fadeIn" data-wow-delay="0.8s" id="job">
+              <h3>Junior Full Stack Software Developer</h3>
+              <h5 class="elegant-text">Omega Software</h5>
+              <p class="grey-text">February 2020 - July 2020</p>
+              <p class="grey-text">Worked in a SCRUM team of developers on creating Full Stack Web Applications using 
+                .NET Core/Framework (MVC + Web API) as the backend and Javascript (JQuery and Angular) as the frontend.
+                Most notably I have worked on the <a href="https://efondovi.mrrfeu.hr/">e-fondovi</a> app and 
+                helped update the mentorship program.
+              </p>
+            </div>
           </div>
 
         </div>
