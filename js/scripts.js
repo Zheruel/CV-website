@@ -1,28 +1,35 @@
 $(function () {
+    // Item popin initializor not related to scrollspy
+    new WOW().init();
+
     function scrollSpy() {
         var scrollPos = $(window).scrollTop();
-
-        console.log(scrollPos);
         
-        if(scrollPos < experiencePos/2){
+        if(scrollPos < educationPos/2){
             $("li a").removeClass("text-muted");
-            $('#aboutItem').addClass("text-muted");
+            $("#aboutItem").addClass("text-muted");
 
         }
         
-        else if (scrollPos <= educationPos){
+        else if (scrollPos < experiencePos/2){
             $("li a").removeClass("text-muted");
-            $('#experienceItem').addClass("text-muted");
+            $("#educationItem").addClass("text-muted");
+        }
+
+        else if (scrollPos < projectsPos/1.2){
+            $("li a").removeClass("text-muted");
+            $("#experienceItem").addClass("text-muted");
+        }
+
+        else {
+            $("li a").removeClass("text-muted");
+            $("#projectsItem").addClass("text-muted");
         }
     }
 
-    new WOW().init();
-
-    var aboutPos = $("#about").position().top;
     var experiencePos = $("#experience").position().top;
     var educationPos = $("#education").position().top;
-
-    console.log(aboutPos, experiencePos, educationPos);
+    var projectsPos = $("#projects").position().top;
 
     scrollSpy();
 

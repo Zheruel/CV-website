@@ -53,11 +53,15 @@ a:hover{
 }
 
 #experience{
-    min-height: 50vh;
+    min-height: 80vh;
 }
 
 #education{
-    min-height: 50vh;
+    min-height: 80vh;
+}
+
+#projects{
+    min-height: 100vh;
 }
 
 #mobileNav{
