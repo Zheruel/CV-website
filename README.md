@@ -1,3 +1,5 @@
 # CV Website
 
-Cv website using HTML/CSS + Javascript
+CV website created using HTML/CSS (Bootstrap, Material Design) with some Javascript(JQuery)
+
+See live at http://tinzeljar.com/
