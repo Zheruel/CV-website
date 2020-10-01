@@ -21,7 +21,7 @@ a:hover{
 #navList{
     list-style-type: none;
     font-size: 25px;
-    margin-bottom: 5em;
+    margin-bottom: 8vh;
 }
 
 #sidebarContainer{
@@ -31,11 +31,11 @@ a:hover{
 }
 
 #authorImage{
-    max-width: 12em;
+    max-width: 20vh;
 }
 
 #sidebarHeader{
-    margin-bottom: 5em;
+    margin-bottom: 8vh;
 }
 
 #test{
@@ -45,7 +45,6 @@ a:hover{
 #siteContent{
     background-color: #1f2324;
     margin-left: 16vw;
-    padding: 0;
 }
 
 #about{
@@ -68,8 +67,24 @@ a:hover{
     display: none;
 }
 
-@media (max-width: 1024px) { 
+@media (max-width: 1199.98px) {
+    #siteContent{
+        margin-left: 0vw;
+        padding: 0;
+    }
+
     #sidebarContainer{
-        max-width: 30vw;
+        visibility: hidden;
+    }
+
+    #mobileNav{
+        display: block;
+        margin-bottom: 2em;
+    }
+}
+
+@media (min-width: 2048px) { 
+    #authorImage{
+        max-width: 12em;
     }
 }

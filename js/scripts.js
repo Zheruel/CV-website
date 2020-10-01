@@ -11,7 +11,7 @@ $(function () {
 
         }
         
-        else if (scrollPos < experiencePos/2){
+        else if (scrollPos < experiencePos/1.2){
             $("li a").removeClass("text-muted");
             $("#educationItem").addClass("text-muted");
         }
