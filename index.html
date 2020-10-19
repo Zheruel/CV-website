@@ -23,16 +23,11 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/css/mdb.min.css"
       rel="stylesheet"
     />
-    <!-- Animate -->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
-    />
     <!-- Custom CSS -->
-    <link rel="stylesheet" href="css/cv.css" />
+    <link rel="stylesheet" href="css/cv.min.css"/>
     <title>Tin Zeljar - Portfolio</title>
   </head>
-  <body data-spy="scroll" data-target="navList" data-offset="50">
+  <body>
     <div class="container-fluid">
       <div class="row">
         <div
@@ -48,7 +43,7 @@
                 id="authorImage"
               />
               <h3>Tin Zeljar</h3>
-              <h5>Full Stack Software Engineer</h5>
+              <h5>Full Stack Software Developer</h5>
               <a href="/cv/Tin Zeljar portfolio.pdf" target="_blank">
                 <button
                 type="button"
@@ -80,7 +75,7 @@
               id="iconContainer"
             >
               <a href="https://github.com/Zheruel" target="_blank"><i class="mr-2 fab fa-github fa-3x"></i></a>
-              <a href="https://hr.linkedin.com/in/tin-zeljar-916b9615a" target="_blank"><i class="mr-2 fab fa-linkedin fa-3x"></i></a>
+              <a href="https://hr.linkedin.com/in/tin-zeljar" target="_blank"><i class="mr-2 fab fa-linkedin fa-3x"></i></a>
               <a href="mailto:tinzeljar@gmail.com"><i class="fas fa-envelope fa-3x"></i></a>
             </div>
           </nav>
@@ -89,7 +84,8 @@
         <div class="col" id="siteContent">
           <nav class="navbar navbar-dark bg-elegant" id="mobileNav">
             <a class="navbar-brand">Tin Zeljar - mobile menu</a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" 
+            data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
               <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
@@ -121,14 +117,17 @@
               id="iconContainer"
               >
                 <a href="https://github.com/Zheruel" target="_blank"><i class="mr-2 fab fa-github fa-3x"></i></a>
-                <a href="https://hr.linkedin.com/in/tin-zeljar-916b9615a" target="_blank"><i class="mr-2 fab fa-linkedin fa-3x"></i></a>
+                <a href="https://hr.linkedin.com/in/tin-zeljar" target="_blank">
+                  <i class="mr-2 fab fa-linkedin fa-3x"></i>
+                </a>
               </div>
             <br>
-              <a href="/cv/Tin Zeljar portfolio.pdf" target="_blank"><button type="button" class="btn btn-outline-yellow btn-lg">Download my CV</button></a>
+              <a href="/cv/Tin Zeljar portfolio.pdf" target="_blank"><button type="button" 
+                class="btn btn-outline-yellow btn-lg">Download my CV</button></a>
             </div>
             <p class="lead wow fadeIn" data-wow-delay="1.2s">
-              I'm an experienced Full Stack Software Developer that has worked in many different technologies.
-              I'm always trying to take my skillset to the next level and am very open to evolving in new technologies.
+              Experienced software developer that has worked in many different front and backend technologies.
+              Ambitious and communicative. Always looking to take my skillset to the next level.
             </p>
 
             <div class="row my-5 py-3 z-depth-1 wow fadeIn" data-wow-delay="1s">
@@ -141,13 +140,13 @@
                   </thead>
                   <tbody>
                     <tr>
-                      <td>HTML/CSS (Bootstrap)</td>
+                      <td>HTML/CSS + (Bootstrap, Material Design)</td>
                     </tr>
                     <tr>
-                      <td>Javascript (JQuery, TypeScript)</td>
+                      <td>Javascript + (JQuery, TypeScript)</td>
                     </tr>
                     <tr>
-                      <td>Angular</td>
+                      <td>Angular + (Material Design, Ant Design)</td>
                     </tr>
                   </tbody>
                 </table>
@@ -162,16 +161,16 @@
                   </thead>
                   <tbody>
                     <tr>
-                      <td>C (C++)</td>
+                      <td>C + (C++)</td>
                     </tr>
                     <tr>
-                      <td>C# (.NET Core)</td>
+                      <td>C# + (.NET Core)</td>
                     </tr>
                     <tr>
-                      <td>Python</td>
+                      <td>Python + (Django REST, Flask)</td>
                     </tr>
                     <tr>
-                      <td>SQL (MS SQL, MySQL)</td>
+                      <td>SQL</td>
                     </tr>
                     <tr>
                       <td>PHP</td>
@@ -189,13 +188,16 @@
                   </thead>
                   <tbody>
                     <tr>
-                      <td>Git (SourceTree, Git Flow)</td>
+                      <td>Git + (SourceTree, Git Flow)</td>
                     </tr>
                     <tr>
-                      <td>Code testing (Unit Tests, ect)</td>
+                      <td>XML, JSON</td>
                     </tr>
                     <tr>
-                      <td>Driver's licence</td>
+                      <td>Postman</td>
+                    </tr>
+                    <tr>
+                      <td>Agile + (SCRUM)</td>
                     </tr>
                   </tbody>
                 </table>
@@ -204,44 +206,43 @@
           </div>
 
           <div class="d-flex flex-column justify-content-center container" id="education">
-            <h1 class="wow fadeIn" data-wow-delay="0.2s">Education</h1>
+            <h1 class="wow fadeIn">Education</h1>
             <br>
-            <div class="container my-5 py-3 z-depth-1 wow fadeIn" data-wow-delay="0.6s" id="college1">
+            <div class="container my-5 py-3 z-depth-1 wow fadeIn" id="college1">
               <h3>Bachelor of Information Technology</h3>
-              <h5>Zagreb University of Applied Sciences</h5>
+              <h5><a href="https://www.tvz.hr/" target="_blank" class="yellow-text">Zagreb University of Applied Sciences</a></h5>
               <p class="grey-text">September 2017 - September 2020</p>
-              <p class="grey-text">Finished the degree with a top of the class GPA while working on many interesting side projects
-                and holding a Full Stack Software Developer job in the last semester. Scored an A on every single CS oriented
-                project including my bachelor's thesis.
+              <p class="grey-text">Scored an A on every single CS oriented project including my bachelor's thesis.
+                Simultaneously worked as a full stack software developer in the industry and created many interesting side projects.
               </p>
             </div>
           </div>
 
           <div class="d-flex flex-column justify-content-center container" id="experience">
-            <h1 class="wow fadeIn" data-wow-delay="0.2s">Experience</h1>
+            <h1 class="wow fadeIn">Experience</h1>
             <br>
-            <div class="container my-5 py-3 z-depth-1 wow fadeIn" data-wow-delay="0.6s" id="job">
+            <div class="container my-5 py-3 z-depth-1 wow fadeIn" id="job">
               <h3>Junior Full Stack Software Developer</h3>
-              <h5>Omega Software</h5>
+              <h5><a href="https://www.omega-software.hr/" target="_blank" class="yellow-text">Omega Software</a></h5>
               <p class="grey-text">February 2020 - July 2020</p>
               <p class="grey-text">
-                Worked on creating and maintaining enterprise Web Applications using C# ( .NET Core) and Javascript 
-                (JQuery, Angular). Most notably I have worked on the <a href="https://efondovi.mrrfeu.hr/">e-fondovi</a> 
-                app and helped to improve their mentorship program
+                Worked on creating and maintaining enterprise level web applications using C# + (.NET Core) and JQuery + Angular. 
+                Most notably I have worked on developing the <a href="https://efondovi.mrrfeu.hr/">e-fondovi</a> app and 
+                helped to improve the mentorship program.
               </p>
             </div>
           </div>
 
           <div class="container d-flex flex-column justify-content-center" id="projects">
-            <h1 class="wow fadeIn" data-wow-delay="0.2s">Projects</h1>
-            <div class="container my-4 py-3 z-depth-1 wow fadeIn" data-wow-delay="0.6s">
+            <h1 class="wow fadeIn">Projects</h1>
+            <div class="container my-4 py-3 z-depth-1 wow fadeIn">
               <section class="text-center text-lg-left">
                 <div class="row mb-1 wow fadeIn">
                   <div class="container col">       
                     <h3 class="font-weight-bold">Mr Robot Webshop</h3>
-                    <p class="grey-text">Single page AJAX Web Application made using .NET Core as the backend and HTML/CSS
-                      along with Javascript/JQuery as the frontend used to manage and sell products. It was created for my 
-                      bachelor's thesis. It got awarded an A by every single member of the commission.
+                    <p class="grey-text">Proof of concept for a PC parts webshop developed
+                      using modern technologies. It was created for my bachelor's thesis and got 
+                      graded with an A by every single member of the commission. 
                     </p>
                     <p>Technologies: 
                       <a class="badge badge-default">.NET Core</a>
@@ -253,22 +254,24 @@
                       <a class="badge badge-default">Entity Framework</a>
                     </p>
                     <a class="btn btn-grey btn-md ml-0" href="/gifs/webshopdemo.gif" target="_blank">View demo</a>
-                    <a class="btn btn-grey btn-md ml-0" href="https://github.com/Zheruel/Mr-Robot-Webshop" target="_blank">View code</a>
+                    <a class="btn btn-grey btn-md ml-0" 
+                    href="https://github.com/Zheruel/Mr-Robot-Webshop" target="_blank">View code</a>
+                    <a class="btn btn-grey btn-md ml-0" 
+                    href="https://docs.google.com/document/d/1U65I8oJdH2-q8ZfGdW-ch1LzSc-LAOjqcYXwpidKxiE/edit?usp=sharing" 
+                    target="_blank">Read seminar</a>
                   </div>
                 </div>
               </section>
             </div>
 
-            <div class="container mb-5 py-3 z-depth-1 wow fadeIn" data-wow-delay="0.6s">
+            <div class="container mb-5 py-3 z-depth-1 wow fadeIn">
               <section class="text-center text-lg-left">
                 <div class="row mb-1 wow fadeIn">
                   <div class="container col">       
                     <h3 class="font-weight-bold">PHP News Website</h3>
-                    <p class="grey-text">News portal created as my final project for the web application development class.
-                      The backend was created in vanilla PHP and the frontend was made using HTML/CSS along with Bootstrap. It has many
-                      interesting features such as user authentication, a dynamically generated front page, dynamically generated
-                      article pages, an administration panel, the ability to post new articles, the ability to filter articles by
-                      categories and more!  
+                    <p class="grey-text">News portal developed as my final project for the web application development class.
+                      It has many interesting features such as user authentication, 
+                      dynamically generated HTML pages, an administration panel and more!  
                     </p>
                     <p>Technologies: 
                       <a class="badge badge-default">PHP</a>
@@ -285,13 +288,13 @@
               </section>
             </div>
 
-            <div class="container mb-5 py-3 z-depth-1 wow fadeIn" data-wow-delay="0.6s">
+            <div class="container mb-5 py-3 z-depth-1 wow fadeIn">
               <section class="text-center text-lg-left">
                 <div class="row mb-1 wow fadeIn">
                   <div class="container col">       
                     <h3 class="font-weight-bold">Python Web Scraper Hangman</h3>
-                    <p class="grey-text">Fully functional hangman game that grabs the most common english words from an online website
-                      using Requests and BeautifulSoup, creates a list and then uses it for the game itself. 
+                    <p class="grey-text">Python hangman game that grabs the most common english words from an online website
+                      using HTTP requests. 
                     </p>
                     <p>Technologies: 
                       <a class="badge badge-default">Python</a>
@@ -306,19 +309,22 @@
               </section>
             </div>
             
-            <div class="container mb-5 py-3 z-depth-1 wow fadeIn" data-wow-delay="0.6s">
+            <div class="container mb-5 py-3 z-depth-1 wow fadeIn">
               <section class="text-center text-lg-left">
                 <div class="row mb-1 wow fadeIn">
                   <div class="container col">       
                     <h3 class="font-weight-bold">Menza Scraper</h3>
-                    <p class="grey-text">Web Scraping tool created in C# using Windows Forms. It uses an exploit to scrape 
-                      https://www.srce.unizg.hr/ and get receipt data for restaurant visits of any student as long as you have 
-                      their JMBAG number. This was my final project for the "Object Oriented Programming 2" class and it scored an A.
+                    <p class="grey-text">Desktop web scraping application. It scrapes
+                      <a href="https://www.srce.unizg.hr/">SRCE</a> and gets receipt data (restaurant visit times, what they ate, ect.) from any 
+                      targeted group of croatian students. The scraped data is saved into an XML document. 
+                      This was my final project for the Object Oriented Programming II class in which it scored an A.
                     </p>
                     <p>Technologies: 
                       <a class="badge badge-default">C#</a>
+                      <a class="badge badge-default">HTTP</a>
                       <a class="badge badge-default">Windows Forms</a>
                       <a class="badge badge-default">HTML Agility Scraper</a> 
+                      <a class="badge badge-default">XML</a> 
                     </p>
                     <a class="btn btn-grey btn-md ml-0" href="/gifs/menzademo.gif" target="_blank">View demo</a>
                     <a class="btn btn-grey btn-md ml-0" href="https://github.com/Zheruel/Menza-scraper" 
@@ -354,5 +360,5 @@
     src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/js/mdb.min.js"
   ></script>
   <!-- Custom javascript -->
-  <script type="text/javascript" src="/js/scripts.js"></script>
+  <script type="text/javascript" src="/js/scripts.min.js"></script>
 </html>

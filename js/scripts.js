@@ -1,7 +1,4 @@
 $(function () {
-    // Item popin initializor not related to scrollspy
-    new WOW().init();
-
     function scrollSpy() {
         var scrollPos = $(window).scrollTop();
         
@@ -36,4 +33,6 @@ $(function () {
     $(window).scroll(function (event) {
         scrollSpy();
     });
+
+    new WOW().init();
 });
