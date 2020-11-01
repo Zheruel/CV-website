@@ -33,6 +33,4 @@ $(function () {
     $(window).scroll(function (event) {
         scrollSpy();
     });
-
-    new WOW().init();
 });
