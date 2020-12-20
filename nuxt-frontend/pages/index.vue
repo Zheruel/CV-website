@@ -1,8 +1,5 @@
 <template>
-  <div class="mainWrapper">
-    <Sidebar />
-    <MainContent />
-  </div>
+  <p>test123</p>
 </template>
 
 <script lang="ts">
