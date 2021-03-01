@@ -1,16 +1,24 @@
 <template>
   <div v-if="isLoaded" id="wrapper">
     <div id="sideBar">
-      <div id="aboutMe">
-        <vs-avatar size="180">
-          <img src="~/assets/tin.jpg" alt="Tin with his cute dog">
-        </vs-avatar>
-        <p id="name">
-          Tin Zeljar
-        </p>
-        <p id="title">
-          Full Stack Software Developer
-        </p>
+      <div id="sideBarOverlay">
+        <div id="menueItems">
+          <vs-avatar size="160">
+            <img src="~/assets/tin.jpg" alt="Tin with his cute dog">
+          </vs-avatar>
+          <p id="name">
+            Tin Zeljar
+          </p>
+          <p id="title">
+            Full Stack Software Developer
+          </p>
+          <div id="linkCollection">
+            <p>Portfolio</p>
+            <p>My offer</p>
+            <p>Contact me</p>
+            <p>My CV</p>
+          </div>
+        </div>
       </div>
     </div>
     <div id="mainContent">
@@ -30,16 +38,15 @@ export default {
   mounted () {
     this.$nextTick(() => {
       const loading = this.$vs.loading({
-        background: '#000000',
-        color: '#fff',
-        text: 'Tin Zeljar',
+        color: '#343a40',
+        text: 'Loading',
         opacity: '1'
       })
 
       setTimeout(() => {
         loading.close()
         this.isLoaded = true
-      }, 1000)
+      }, 1200)
     })
   }
 }
@@ -49,8 +56,6 @@ export default {
 html {
   font-family: "Roboto", sans-serif;
   font-style: normal;
-  color: white;
-  background-color: #000000;
 }
 
 body {
@@ -61,8 +66,6 @@ body {
   display: flex;
   width: 100%;
   height: 100%;
-  background-image: url("~/assets/mountains.jpg");
-  background-size: cover;
 }
 
 #sideBar {
@@ -71,17 +74,25 @@ body {
   text-transform: uppercase;
   height: 100vh;
   width: 20%;
-  background: rgba(38, 70, 83, 0.80);
+  background-image: url("~/assets/sidebarbackground.jpg");
+  background-size: cover;
+  color: white;
+}
+
+#sideBarOverlay {
+  width: 100%;
+  height: 100%;
+  background: rgba(38, 70, 83, 0.8);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
 #mainContent {
   height: 100vh;
   width: 80%;
-  background: rgba(42, 157, 143, 0.8);
+  background-image: linear-gradient(to right, #2a9d8f, #239486, #1b8a7d, #138174, #08786b);
 }
 
-#aboutMe {
+#menueItems {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -91,17 +102,12 @@ body {
 
 #name {
   font-weight: bold;
-  font-size: 1.5em;
-  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  font-size: 22px;
 }
 
 #title {
   position: relative;
   top: -32px;
-  font-size: 1em;
-}
-
-[v-cloak] {
-  display: none;
+  font-size: 16px;
 }
 </style>
