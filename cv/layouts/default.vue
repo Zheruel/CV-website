@@ -38,15 +38,15 @@ export default {
   mounted () {
     this.$nextTick(() => {
       const loading = this.$vs.loading({
-        color: '#343a40',
-        text: 'Loading',
-        opacity: '1'
+        color: '#fff',
+        opacity: '0',
+        type: 'points'
       })
 
       setTimeout(() => {
         loading.close()
         this.isLoaded = true
-      }, 1200)
+      }, 1250)
     })
   }
 }
@@ -60,6 +60,8 @@ html {
 
 body {
   margin: 0;
+  background-color: #2c3e50;
+  transition: background-color 0.6s ease-in-out 0s;
 }
 
 #wrapper {
@@ -89,7 +91,8 @@ body {
 #mainContent {
   height: 100vh;
   width: 80%;
-  background-image: linear-gradient(to right, #2a9d8f, #239486, #1b8a7d, #138174, #08786b);
+  background-image: url("~/assets/nocolormountains.jpg");
+  background-size: cover;
 }
 
 #menueItems {
