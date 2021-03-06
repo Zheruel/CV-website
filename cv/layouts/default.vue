@@ -12,12 +12,23 @@
           <p id="title">
             Full Stack Software Developer
           </p>
-          <div id="linkCollection">
-            <p>Portfolio</p>
-            <p>My offer</p>
-            <p>Contact me</p>
-            <p>My CV</p>
-          </div>
+          <ul id="linkCollection">
+            <NuxtLink id="nuxtLink" to="/portfolio">
+              <li>Portfolio</li>
+            </NuxtLink>
+            <NuxtLink id="nuxtLink" to="/skills">
+              <li>Skills</li>
+            </NuxtLink>
+            <NuxtLink id="nuxtLink" to="/contact">
+              <li>Contact me</li>
+            </NuxtLink>
+            <NuxtLink id="nuxtLink" to="/cv">
+              <li>My CV</li>
+            </NuxtLink>
+          </ul>
+          <font-awesome-icon :icon="['fas', 'envelope']" />
+          <font-awesome-icon :icon="['fab', 'linkedin']" />
+          <font-awesome-icon :icon="['fab', 'github']" />
         </div>
       </div>
     </div>
@@ -31,7 +42,8 @@
 export default {
   data () {
     return {
-      isLoaded: false
+      isLoaded: false,
+      active: 0
     }
   },
 
@@ -112,5 +124,27 @@ body {
   position: relative;
   top: -32px;
   font-size: 16px;
+}
+
+#linkCollection {
+  align-self: flex-start;
+  list-style-type: none;
+  padding: 0;
+  text-align: left;
+  margin: 50px 0 0 50px;
+}
+
+#linkCollection li {
+  font-size: 25px;
+  margin-bottom: 10px;
+}
+
+#linkCollection li:hover {
+  color: lightgray;
+}
+
+#nuxtLink {
+  text-decoration: none;
+  color: white;
 }
 </style>

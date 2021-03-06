@@ -5,20 +5,28 @@
       a full-stack software developer specialized
       in both <b>front-end</b> and <b>back-end</b>
     </p>
-    <vs-button
-      size="xl"
-      :active="active == 0"
-      @click="active = 0"
-    >
-      Portfolio
-    </vs-button>
-    <vs-button
-      size="xl"
-      :active="active == 1"
-      @click="active = 1"
-    >
-      My offer
-    </vs-button>
+    <NuxtLink id="nuxtLink" to="/portfolio">
+      <vs-button
+        id="heroButton"
+        size="xl"
+        border
+        warn
+        square
+      >
+        Portfolio
+      </vs-button>
+    </NuxtLink>
+    <NuxtLink id="nuxtLink" to="/skills">
+      <vs-button
+        id="heroButton"
+        size="xl"
+        border
+        warn
+        square
+      >
+        Skills
+      </vs-button>
+    </NuxtLink>
   </div>
 </template>
 
@@ -33,6 +41,10 @@ export default {
   margin: 100px 0px 0px 40px;
   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   color: white;
+}
+
+#heroButton {
+  width: 150px;
 }
 
 h1 {
