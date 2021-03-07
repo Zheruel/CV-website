@@ -26,9 +26,17 @@
               <li>My CV</li>
             </NuxtLink>
           </ul>
-          <font-awesome-icon :icon="['fas', 'envelope']" />
-          <font-awesome-icon :icon="['fab', 'linkedin']" />
-          <font-awesome-icon :icon="['fab', 'github']" />
+          <div id="faIconCollection">
+            <a href="mailto:tinzeljar@gmail.com">
+              <font-awesome-icon id="faIcon" :icon="['fas', 'envelope']" />
+            </a>
+            <a href="https://www.linkedin.com/in/tin-zeljar/" target="_blank">
+              <font-awesome-icon id="faIcon" :icon="['fab', 'linkedin']" />
+            </a>
+            <a href="https://github.com/Zheruel" target="_blank">
+              <font-awesome-icon id="faIcon" :icon="['fab', 'github']" />
+            </a>
+          </div>
         </div>
       </div>
     </div>
@@ -84,7 +92,6 @@ body {
 
 #sideBar {
   display: flex;
-  justify-content: center;
   text-transform: uppercase;
   height: 100vh;
   width: 20%;
@@ -140,11 +147,24 @@ body {
 }
 
 #linkCollection li:hover {
-  color: lightgray;
+  color: gray;
 }
 
 #nuxtLink {
   text-decoration: none;
+  color: white;
+}
+
+#faIcon {
+  font-size: 35px;
+  margin: 50px 5px 0 0;
+}
+
+#faIcon:hover {
+  color: gray;
+}
+
+#faIconCollection a {
   color: white;
 }
 </style>
