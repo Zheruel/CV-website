@@ -1,11 +1,33 @@
 <template>
   <div v-if="isLoaded" id="wrapper">
+    <div id="mobileNav" @click="toggleMobile()">
+      <NuxtLink id="nuxtLink" to="/">
+        Home
+      </NuxtLink>
+      <div v-if="showMobileMenu" id="mobileNavLinks">
+        <NuxtLink id="nuxtLink" to="/portfolio">
+          Portfolio
+        </NuxtLink>
+        <NuxtLink id="nuxtLink" to="/skills">
+          Skills
+        </NuxtLink>
+        <NuxtLink id="nuxtLink" to="/contact">
+          Contact me
+        </NuxtLink>
+        <NuxtLink id="nuxtLink" to="/cv">
+          My cv
+        </NuxtLink>
+      </div>
+      <font-awesome-icon id="mobileNavIcon" :icon="['fa', 'bars']" />
+    </div>
     <div id="sideBar">
       <div id="sideBarOverlay">
         <div id="menueItems">
-          <vs-avatar size="160">
-            <img src="~/assets/tin.jpg" alt="Tin with his cute dog">
-          </vs-avatar>
+          <NuxtLink id="nuxtLink" to="/">
+            <vs-avatar size="150">
+              <img src="~/assets/tin.jpg" alt="Tin with his cute dog">
+            </vs-avatar>
+          </NuxtLink>
           <p id="name">
             Tin Zeljar
           </p>
@@ -51,10 +73,9 @@ export default {
   data () {
     return {
       isLoaded: false,
-      active: 0
+      showMobileMenu: false
     }
   },
-
   mounted () {
     this.$nextTick(() => {
       const loading = this.$vs.loading({
@@ -68,11 +89,24 @@ export default {
         this.isLoaded = true
       }, 1250)
     })
+  },
+  methods: {
+    toggleMobile () {
+      if (this.showMobileMenu === false) {
+        this.showMobileMenu = true
+      } else {
+        this.showMobileMenu = false
+      }
+    }
   }
 }
 </script>
 
 <style>
+#mobileNav {
+  display: none;
+}
+
 html {
   font-family: "Roboto", sans-serif;
   font-style: normal;
@@ -86,8 +120,6 @@ body {
 
 #wrapper {
   display: flex;
-  width: 100%;
-  height: 100%;
 }
 
 #sideBar {
@@ -98,6 +130,9 @@ body {
   background-image: url("~/assets/sidebarbackground.jpg");
   background-size: cover;
   color: white;
+  position: -webkit-sticky; /* Safari */
+  position: sticky;
+  top: 0;
 }
 
 #sideBarOverlay {
@@ -142,7 +177,7 @@ body {
 }
 
 #linkCollection li {
-  font-size: 25px;
+  font-size: 22px;
   margin-bottom: 10px;
 }
 
@@ -166,5 +201,71 @@ body {
 
 #faIconCollection a {
   color: white;
+}
+
+@media only screen and (max-width: 1536px) {
+  #name {
+    font-size: 20px;
+  }
+
+  #title {
+    font-size: 14px;
+  }
+}
+
+@media only screen and (max-width: 1366px) {
+  #name {
+    font-size: 18px;
+  }
+
+  #title {
+    font-size: 12px;
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+  #wrapper {
+    flex-direction: column;
+  }
+
+  #sideBar {
+    display: none;
+  }
+
+  #mainContent {
+    width: 100%;
+  }
+
+  #mobileNav {
+    display: flex;
+    justify-content: center;
+    min-height: 45px;
+    flex-direction: column;
+    padding: 5px;
+  }
+
+  #mobileNav a{
+    padding: 10px;
+  }
+
+  #mobileNav a:hover{
+    background-color: gray;
+  }
+
+  #mobileNavIcon {
+    font-size: 25px;
+    position: absolute;
+    right: 6px;
+    top: 3px;
+  }
+
+  #mobileNavIcon:hover {
+    color: gray;
+  }
+
+  #mobileNavLinks {
+    display: flex;
+    flex-direction: column;
+  }
 }
 </style>

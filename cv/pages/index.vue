@@ -45,6 +45,7 @@ export default {
 
 #heroButton {
   width: 150px;
+  margin-bottom: 8px;
 }
 
 h1 {
@@ -52,7 +53,7 @@ h1 {
 }
 
 p {
-  width: 650px;
+  max-width: 650px;
   font-size: 30px;
 }
 </style>
