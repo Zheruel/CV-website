@@ -23,6 +23,7 @@
         border
         warn
         square
+        @click="active = 1"
       >
         Skills
       </vs-button>

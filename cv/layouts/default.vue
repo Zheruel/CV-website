@@ -24,7 +24,7 @@
       <div id="sideBarOverlay">
         <div id="menueItems">
           <NuxtLink id="nuxtLink" to="/">
-            <vs-avatar size="150">
+            <vs-avatar size="150" @click="active = 0">
               <img src="~/assets/tin.jpg" alt="Tin with his cute dog">
             </vs-avatar>
           </NuxtLink>
@@ -36,16 +36,24 @@
           </p>
           <ul id="linkCollection">
             <NuxtLink id="nuxtLink" to="/portfolio">
-              <li>Portfolio</li>
+              <li :class="{ 'muted' : active == 1}" @click="active = 1">
+                Portfolio
+              </li>
             </NuxtLink>
             <NuxtLink id="nuxtLink" to="/skills">
-              <li>Skills</li>
+              <li :class="{ 'muted' : active == 2}" @click="active = 2">
+                Skills
+              </li>
             </NuxtLink>
             <NuxtLink id="nuxtLink" to="/contact">
-              <li>Contact me</li>
+              <li :class="{ 'muted' : active == 3}" @click="active = 3">
+                Contact me
+              </li>
             </NuxtLink>
             <NuxtLink id="nuxtLink" to="/cv">
-              <li>My CV</li>
+              <li :class="{ 'muted' : active == 4}" @click="active = 4">
+                My CV
+              </li>
             </NuxtLink>
           </ul>
           <div id="faIconCollection">
@@ -73,7 +81,8 @@ export default {
   data () {
     return {
       isLoaded: false,
-      showMobileMenu: false
+      showMobileMenu: false,
+      active: Number
     }
   },
   mounted () {
@@ -201,6 +210,10 @@ body {
 
 #faIconCollection a {
   color: white;
+}
+
+.muted {
+  color: gray;
 }
 
 @media only screen and (max-width: 1536px) {
