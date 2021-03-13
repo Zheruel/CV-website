@@ -1,5 +1,5 @@
 <template>
-  <p>Skills placeholder</p>
+  <p>My offer placeholder</p>
 </template>
 
 <script>

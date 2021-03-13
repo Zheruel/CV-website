@@ -8,8 +8,8 @@
         <NuxtLink id="nuxtLink" to="/portfolio">
           Portfolio
         </NuxtLink>
-        <NuxtLink id="nuxtLink" to="/skills">
-          Skills
+        <NuxtLink id="nuxtLink" to="/myoffer">
+          My Offer
         </NuxtLink>
         <NuxtLink id="nuxtLink" to="/contact">
           Contact me
@@ -40,9 +40,9 @@
                 Portfolio
               </li>
             </NuxtLink>
-            <NuxtLink id="nuxtLink" to="/skills">
+            <NuxtLink id="nuxtLink" to="/myoffer">
               <li :class="{ 'muted' : getActiveCategory == 2}" @click="setActiveCategory(2)">
-                Skills
+                My Offer
               </li>
             </NuxtLink>
             <NuxtLink id="nuxtLink" to="/contact">
@@ -101,6 +101,24 @@ export default {
         loading.close()
         this.isLoaded = true
       }, 1250)
+
+      switch (this.$nuxt.$route.name) {
+        case 'index':
+          this.setActiveCategory(0)
+          break
+        case 'portfolio':
+          this.setActiveCategory(1)
+          break
+        case 'myoffer':
+          this.setActiveCategory(2)
+          break
+        case 'contact':
+          this.setActiveCategory(3)
+          break
+        case 'cv':
+          this.setActiveCategory(4)
+          break
+      }
     })
   },
   methods: {

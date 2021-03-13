@@ -17,7 +17,7 @@
         Portfolio
       </vs-button>
     </NuxtLink>
-    <NuxtLink id="nuxtLink" to="/skills">
+    <NuxtLink id="nuxtLink" to="/myoffer">
       <vs-button
         id="heroButton"
         size="xl"
@@ -26,7 +26,7 @@
         square
         @click="setActiveCategory(2)"
       >
-        Skills
+        My Offer
       </vs-button>
     </NuxtLink>
   </div>
