@@ -24,7 +24,7 @@
       <div id="sideBarOverlay">
         <div id="menueItems">
           <NuxtLink id="nuxtLink" to="/">
-            <vs-avatar size="150" @click="active = 0">
+            <vs-avatar size="150" @click="setActiveCategory(0)">
               <img src="~/assets/tin.jpg" alt="Tin with his cute dog">
             </vs-avatar>
           </NuxtLink>
@@ -36,22 +36,22 @@
           </p>
           <ul id="linkCollection">
             <NuxtLink id="nuxtLink" to="/portfolio">
-              <li :class="{ 'muted' : active == 1}" @click="active = 1">
+              <li :class="{ 'muted' : getActiveCategory == 1}" @click="setActiveCategory(1)">
                 Portfolio
               </li>
             </NuxtLink>
             <NuxtLink id="nuxtLink" to="/skills">
-              <li :class="{ 'muted' : active == 2}" @click="active = 2">
+              <li :class="{ 'muted' : getActiveCategory == 2}" @click="setActiveCategory(2)">
                 Skills
               </li>
             </NuxtLink>
             <NuxtLink id="nuxtLink" to="/contact">
-              <li :class="{ 'muted' : active == 3}" @click="active = 3">
+              <li :class="{ 'muted' : getActiveCategory == 3}" @click="setActiveCategory(3)">
                 Contact me
               </li>
             </NuxtLink>
             <NuxtLink id="nuxtLink" to="/cv">
-              <li :class="{ 'muted' : active == 4}" @click="active = 4">
+              <li :class="{ 'muted' : getActiveCategory == 4}" @click="setActiveCategory(4)">
                 My CV
               </li>
             </NuxtLink>
@@ -81,8 +81,12 @@ export default {
   data () {
     return {
       isLoaded: false,
-      showMobileMenu: false,
-      active: Number
+      showMobileMenu: false
+    }
+  },
+  computed: {
+    getActiveCategory () {
+      return this.$store.state.activeCategory
     }
   },
   mounted () {
@@ -106,6 +110,9 @@ export default {
       } else {
         this.showMobileMenu = false
       }
+    },
+    setActiveCategory (number) {
+      this.$store.commit('setActive', number)
     }
   }
 }

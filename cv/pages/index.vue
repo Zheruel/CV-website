@@ -12,6 +12,7 @@
         border
         warn
         square
+        @click="setActiveCategory(1)"
       >
         Portfolio
       </vs-button>
@@ -23,7 +24,7 @@
         border
         warn
         square
-        @click="active = 1"
+        @click="setActiveCategory(2)"
       >
         Skills
       </vs-button>
@@ -33,7 +34,11 @@
 
 <script>
 export default {
-  components: {}
+  methods: {
+    setActiveCategory (number) {
+      this.$store.commit('setActive', number)
+    }
+  }
 }
 </script>
 
