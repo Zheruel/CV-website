@@ -123,11 +123,7 @@ export default {
   },
   methods: {
     toggleMobile () {
-      if (this.showMobileMenu === false) {
-        this.showMobileMenu = true
-      } else {
-        this.showMobileMenu = false
-      }
+      this.showMobileMenu = !this.showMobileMenu
     },
     setActiveCategory (number) {
       this.$store.commit('setActive', number)
