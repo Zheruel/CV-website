@@ -84,11 +84,13 @@ export default {
       showMobileMenu: false
     }
   },
+
   computed: {
     getActiveCategory () {
       return this.$store.state.activeCategory
     }
   },
+
   mounted () {
     this.$nextTick(() => {
       const loading = this.$vs.loading({
@@ -121,10 +123,12 @@ export default {
       }
     })
   },
+
   methods: {
     toggleMobile () {
       this.showMobileMenu = !this.showMobileMenu
     },
+
     setActiveCategory (number) {
       this.$store.commit('setActive', number)
     }
@@ -139,7 +143,6 @@ export default {
 
 html {
   font-family: "Roboto", sans-serif;
-  font-style: normal;
 }
 
 body {
@@ -223,14 +226,11 @@ body {
 #faIcon {
   font-size: 35px;
   margin: 50px 5px 0 0;
+  color: white;
 }
 
 #faIcon:hover {
   color: gray;
-}
-
-#faIconCollection a {
-  color: white;
 }
 
 .muted {

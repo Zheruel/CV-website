@@ -1,7 +1,9 @@
 <template>
   <div id="hero">
-    <h1>Hi, I'm Tin</h1>
-    <p>
+    <h1 id="announceTin">
+      Hi, I'm Tin
+    </h1>
+    <p id="describeTin">
       a full-stack software developer specialized
       in both <b>front-end</b> and <b>back-end</b>
     </p>
@@ -54,11 +56,11 @@ export default {
   margin-bottom: 8px;
 }
 
-h1 {
+#announceTin {
   font-size: 60px;
 }
 
-p {
+#describeTin {
   max-width: 650px;
   font-size: 30px;
 }
