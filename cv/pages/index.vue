@@ -4,7 +4,7 @@
       Hi, I'm Tin
     </h1>
     <p id="describeTin">
-      a full-stack software developer specialized
+      a proven technology expert specialized
       in both <b>front-end</b> and <b>back-end</b>
     </p>
     <NuxtLink id="nuxtLink" to="/portfolio">

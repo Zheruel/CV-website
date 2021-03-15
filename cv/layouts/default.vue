@@ -14,9 +14,9 @@
         <NuxtLink id="nuxtLink" to="/contact">
           Contact me
         </NuxtLink>
-        <NuxtLink id="nuxtLink" to="/cv">
+        <a id="nuxtLink" href="cv">
           My cv
-        </NuxtLink>
+        </a>
       </div>
       <font-awesome-icon id="mobileNavIcon" :icon="['fa', 'bars']" />
     </div>
@@ -50,11 +50,11 @@
                 Contact me
               </li>
             </NuxtLink>
-            <NuxtLink id="nuxtLink" to="/cv">
-              <li :class="{ 'muted' : getActiveCategory == 4}" @click="setActiveCategory(4)">
+            <a id="nuxtLink" href="cv">
+              <li>
                 My CV
               </li>
-            </NuxtLink>
+            </a>
           </ul>
           <div id="faIconCollection">
             <a href="mailto:tinzeljar@gmail.com">
@@ -70,7 +70,7 @@
         </div>
       </div>
     </div>
-    <div id="mainContent">
+    <div id="mainContent" :class="getActiveCategory == 0 ?'mountainBackground':'gradientBackground'">
       <Nuxt />
     </div>
   </div>
@@ -116,9 +116,6 @@ export default {
           break
         case 'contact':
           this.setActiveCategory(3)
-          break
-        case 'cv':
-          this.setActiveCategory(4)
           break
       }
     })
@@ -176,10 +173,17 @@ body {
 }
 
 #mainContent {
-  height: 100vh;
+  min-height: 100vh;
   width: 80%;
+}
+
+.mountainBackground {
   background-image: url("~/assets/nocolormountains.jpg");
   background-size: cover;
+}
+
+.gradientBackground {
+  background-color: whitesmoke;
 }
 
 #menueItems {
@@ -257,7 +261,7 @@ body {
   }
 }
 
-@media only screen and (max-width: 1000px) {
+@media only screen and (max-width: 1024px) {
   #wrapper {
     flex-direction: column;
   }
