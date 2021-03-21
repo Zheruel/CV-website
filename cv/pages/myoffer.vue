@@ -63,7 +63,7 @@
     </p>
     <p style="margin-top: 30px">
       It's important to note that this is just a list of things I'm already familiar with. I'm happy to acquire new skills
-      and further increase my knowledge for any potential future project. The lessons I learned while using these technologies
+      and further increase my knowledge for any potential future projects. The lessons I learned while using these technologies
       will drastically cut my learning curve.
     </p>
     <hr>
