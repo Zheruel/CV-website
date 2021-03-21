@@ -14,9 +14,9 @@
         <NuxtLink id="nuxtLink" to="/contact">
           Contact me
         </NuxtLink>
-        <NuxtLink id="nuxtLink" to="/cv">
+        <a id="nuxtLink" href="cv">
           My cv
-        </NuxtLink>
+        </a>
       </div>
       <font-awesome-icon id="mobileNavIcon" :icon="['fa', 'bars']" />
     </div>
@@ -24,9 +24,7 @@
       <div id="sideBarOverlay">
         <div id="menueItems">
           <NuxtLink id="nuxtLink" to="/">
-            <vs-avatar size="150" @click="setActiveCategory(0)">
-              <img src="~/assets/tin.jpg" alt="Tin with his cute dog">
-            </vs-avatar>
+            <img id="tinAvatar" src="~/assets/tin.jpg" alt="Tin with his cute dog">
           </NuxtLink>
           <p id="name">
             Tin Zeljar
@@ -36,25 +34,25 @@
           </p>
           <ul id="linkCollection">
             <NuxtLink id="nuxtLink" to="/portfolio">
-              <li :class="{ 'muted' : getActiveCategory == 1}" @click="setActiveCategory(1)">
+              <li :class="{ 'muted' : getActiveCategory == 1}">
                 Portfolio
               </li>
             </NuxtLink>
             <NuxtLink id="nuxtLink" to="/myoffer">
-              <li :class="{ 'muted' : getActiveCategory == 2}" @click="setActiveCategory(2)">
+              <li :class="{ 'muted' : getActiveCategory == 2}">
                 My Offer
               </li>
             </NuxtLink>
             <NuxtLink id="nuxtLink" to="/contact">
-              <li :class="{ 'muted' : getActiveCategory == 3}" @click="setActiveCategory(3)">
+              <li :class="{ 'muted' : getActiveCategory == 3}">
                 Contact me
               </li>
             </NuxtLink>
-            <NuxtLink id="nuxtLink" to="/cv">
-              <li :class="{ 'muted' : getActiveCategory == 4}" @click="setActiveCategory(4)">
+            <a id="nuxtLink" href="cv">
+              <li>
                 My CV
               </li>
-            </NuxtLink>
+            </a>
           </ul>
           <div id="faIconCollection">
             <a href="mailto:tinzeljar@gmail.com">
@@ -70,7 +68,7 @@
         </div>
       </div>
     </div>
-    <div id="mainContent">
+    <div id="mainContent" :class="getActiveCategory == 0 ?'mountainBackground':'gradientBackground'">
       <Nuxt />
     </div>
   </div>
@@ -88,6 +86,25 @@ export default {
   computed: {
     getActiveCategory () {
       return this.$store.state.activeCategory
+    }
+  },
+
+  watch: {
+    $route () {
+      switch (this.$nuxt.$route.name) {
+        case 'index':
+          this.setActiveCategory(0)
+          break
+        case 'portfolio':
+          this.setActiveCategory(1)
+          break
+        case 'myoffer':
+          this.setActiveCategory(2)
+          break
+        case 'contact':
+          this.setActiveCategory(3)
+          break
+      }
     }
   },
 
@@ -116,9 +133,6 @@ export default {
           break
         case 'contact':
           this.setActiveCategory(3)
-          break
-        case 'cv':
-          this.setActiveCategory(4)
           break
       }
     })
@@ -155,6 +169,12 @@ body {
   display: flex;
 }
 
+#tinAvatar {
+  width: 152px;
+  height: 152px;
+  border-radius: 50%;
+}
+
 #sideBar {
   display: flex;
   text-transform: uppercase;
@@ -176,10 +196,17 @@ body {
 }
 
 #mainContent {
-  height: 100vh;
+  min-height: 100vh;
   width: 80%;
+}
+
+.mountainBackground {
   background-image: url("~/assets/nocolormountains.jpg");
   background-size: cover;
+}
+
+.gradientBackground {
+  background-color: whitesmoke;
 }
 
 #menueItems {
@@ -191,6 +218,7 @@ body {
 }
 
 #name {
+  margin-top: 10px;
   font-weight: bold;
   font-size: 22px;
 }
@@ -257,7 +285,7 @@ body {
   }
 }
 
-@media only screen and (max-width: 1000px) {
+@media only screen and (max-width: 1024px) {
   #wrapper {
     flex-direction: column;
   }

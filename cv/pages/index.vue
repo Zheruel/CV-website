@@ -4,7 +4,7 @@
       Hi, I'm Tin
     </h1>
     <p id="describeTin">
-      a full-stack software developer specialized
+      a skilled software developer specialized
       in both <b>front-end</b> and <b>back-end</b>
     </p>
     <NuxtLink id="nuxtLink" to="/portfolio">
@@ -14,7 +14,6 @@
         border
         warn
         square
-        @click="setActiveCategory(1)"
       >
         Portfolio
       </vs-button>
@@ -26,7 +25,6 @@
         border
         warn
         square
-        @click="setActiveCategory(2)"
       >
         My Offer
       </vs-button>
