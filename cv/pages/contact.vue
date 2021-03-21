@@ -41,6 +41,7 @@ export default {
 <style>
 #contactMeSection {
   padding: 50px;
+  max-width: 850px;
   background-color: white;
   color: #555;
 }
@@ -48,7 +49,7 @@ export default {
 #contactMeSection h1 {
   margin: 0;
   text-transform: uppercase;
-  font-weight: 500;
+  font-weight: 400;
 }
 
 #contactMeSection a {

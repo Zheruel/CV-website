@@ -24,9 +24,7 @@
       <div id="sideBarOverlay">
         <div id="menueItems">
           <NuxtLink id="nuxtLink" to="/">
-            <vs-avatar size="150" @click="setActiveCategory(0)">
-              <img src="~/assets/tin.jpg" alt="Tin with his cute dog">
-            </vs-avatar>
+            <img id="tinAvatar" src="~/assets/tin.jpg" alt="Tin with his cute dog">
           </NuxtLink>
           <p id="name">
             Tin Zeljar
@@ -36,17 +34,17 @@
           </p>
           <ul id="linkCollection">
             <NuxtLink id="nuxtLink" to="/portfolio">
-              <li :class="{ 'muted' : getActiveCategory == 1}" @click="setActiveCategory(1)">
+              <li :class="{ 'muted' : getActiveCategory == 1}">
                 Portfolio
               </li>
             </NuxtLink>
             <NuxtLink id="nuxtLink" to="/myoffer">
-              <li :class="{ 'muted' : getActiveCategory == 2}" @click="setActiveCategory(2)">
+              <li :class="{ 'muted' : getActiveCategory == 2}">
                 My Offer
               </li>
             </NuxtLink>
             <NuxtLink id="nuxtLink" to="/contact">
-              <li :class="{ 'muted' : getActiveCategory == 3}" @click="setActiveCategory(3)">
+              <li :class="{ 'muted' : getActiveCategory == 3}">
                 Contact me
               </li>
             </NuxtLink>
@@ -88,6 +86,25 @@ export default {
   computed: {
     getActiveCategory () {
       return this.$store.state.activeCategory
+    }
+  },
+
+  watch: {
+    $route () {
+      switch (this.$nuxt.$route.name) {
+        case 'index':
+          this.setActiveCategory(0)
+          break
+        case 'portfolio':
+          this.setActiveCategory(1)
+          break
+        case 'myoffer':
+          this.setActiveCategory(2)
+          break
+        case 'contact':
+          this.setActiveCategory(3)
+          break
+      }
     }
   },
 
@@ -152,6 +169,12 @@ body {
   display: flex;
 }
 
+#tinAvatar {
+  width: 152px;
+  height: 152px;
+  border-radius: 50%;
+}
+
 #sideBar {
   display: flex;
   text-transform: uppercase;
@@ -195,6 +218,7 @@ body {
 }
 
 #name {
+  margin-top: 10px;
   font-weight: bold;
   font-size: 22px;
 }
