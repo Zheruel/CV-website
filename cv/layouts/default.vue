@@ -14,7 +14,7 @@
         <NuxtLink id="nuxtLink" to="/contact">
           Contact me
         </NuxtLink>
-        <a id="nuxtLink" href="cv">
+        <a id="nuxtLink" href="https://drive.google.com/file/d/1rlqsZ7fER3EZJ4cWicx-g_y1o3CBoj7D/view?usp=sharing">
           My cv
         </a>
       </div>
@@ -48,7 +48,7 @@
                 Contact me
               </li>
             </NuxtLink>
-            <a id="nuxtLink" href="cv">
+            <a id="nuxtLink" href="https://drive.google.com/file/d/1rlqsZ7fER3EZJ4cWicx-g_y1o3CBoj7D/view?usp=sharing">
               <li>
                 My CV
               </li>
@@ -263,6 +263,20 @@ body {
 
 .muted {
   color: gray;
+}
+
+hr {
+  box-sizing: content-box;
+  margin: 30px 0;
+  height: 1px;
+  width: 100%;
+  background: #ddd;
+  border: none;
+}
+
+#mtColor {
+  color: #40748a;
+  text-decoration: none;
 }
 
 @media only screen and (max-width: 1536px) {

@@ -88,15 +88,6 @@ export default {
 </script>
 
 <style>
-hr {
-  box-sizing: content-box;
-  margin: 30px 0;
-  height: 1px;
-  width: 100%;
-  background: #ddd;
-  border: none;
-}
-
 #myOfferSection {
   padding: 50px;
   max-width: 850px;
@@ -119,11 +110,6 @@ hr {
 
 #competenceList li {
   margin-bottom: 8px;
-}
-
-#mtColor {
-  color: #40748a;
-  text-decoration: none;
 }
 
 @media screen and (max-width: 1024px){
