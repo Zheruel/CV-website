@@ -119,7 +119,7 @@ export default {
       setTimeout(() => {
         loading.close()
         this.isLoaded = true
-      }, 1250)
+      }, 1500)
 
       switch (this.$nuxt.$route.name) {
         case 'index':

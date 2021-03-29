@@ -28,38 +28,38 @@
     <h2>Technologies</h2>
     <p>
       Languages:
-      <img src="https://img.shields.io/badge/(++)-informational?logo=c&logoColor=white&color=659BD3" alt="c/c++">
-      <img src="https://img.shields.io/badge/Sharp-informational?logo=c&logoColor=white&color=9B6AD5" alt="c#">
-      <img src="https://img.shields.io/badge/Python-informational?logo=python&logoColor=white&color=000000" alt="python">
-      <img src="https://img.shields.io/badge/JavaScript-informational?logo=javascript&logoColor=white&color=F7DF1E" alt="javascript">
-      <img src="https://img.shields.io/badge/TypeScript-informational?logo=typescript&logoColor=white&color=007ACC" alt="typescript">
-      <img src="https://img.shields.io/badge/PHP-informational?logo=php&logoColor=white&color=777BB3" alt="php">
+      <img src="~/assets/clang.svg" alt="c/c++">
+      <img src="~/assets/csharplang.svg" alt="c#">
+      <img src="~/assets/python.svg" alt="python">
+      <img src="~/assets/javascript.svg" alt="javascript">
+      <img src="~/assets/typescript.svg" alt="typescript">
+      <img src="~/assets/php.svg" alt="php">
     </p>
     <p>
       Front-end:
-      <img src="https://img.shields.io/badge/HTML/CSS-informational?logo=html5&logoColor=white&color=2896CE" alt="Html5/Css3">
-      <img src="https://img.shields.io/badge/SASS/SCSS-informational?logo=sass&logoColor=white&color=CC6699" alt="SASS/SCSS">
-      <img src="https://img.shields.io/badge/jQuery-informational?logo=jquery&logoColor=white&color=1E78AC" alt="jQuery">
-      <img src="https://img.shields.io/badge/Angular-informational?logo=angular&logoColor=white&color=DD0031" alt="Angular">
-      <img src="https://img.shields.io/badge/Vue-informational?logo=vue.js&logoColor=white&color=00C180" alt="Vue.js">
-      <img src="https://img.shields.io/badge/Nuxt-informational?logo=nuxt.js&logoColor=white&color=2F495E" alt="Nuxt.js">
-      <img src="https://img.shields.io/badge/React-informational?logo=react&logoColor=white&color=61DAFB" alt="React">
+      <img src="~/assets/html.svg" alt="Html5/Css3">
+      <img src="~/assets/sass.svg" alt="SASS/SCSS">
+      <img src="~/assets/jquery.svg" alt="jQuery">
+      <img src="~/assets/angular.svg" alt="Angular">
+      <img src="~/assets/vue.svg" alt="Vue.js">
+      <img src="~/assets/nuxt.svg" alt="Nuxt.js">
+      <img src="~/assets/react.svg" alt="React">
     </p>
     <p>
       Back-end:
-      <img src="https://img.shields.io/badge/Django-informational?logo=django&logoColor=white&color=0F3E2E" alt="Django">
-      <img src="https://img.shields.io/badge/ASP.NET-informational?logo=.net&logoColor=white&color=5C2D91" alt="ASP.NET">
-      <img src="https://img.shields.io/badge/NodeJS-informational?logo=node.js&logoColor=white&color=339933" alt="Node.js">
+      <img src="~/assets/django.svg" alt="Django">
+      <img src="~/assets/aspnet.svg" alt="ASP.NET">
+      <img src="~/assets/nodejs.svg" alt="Node.js">
     </p>
     <p>
       Other:
-      <img src="https://img.shields.io/badge/MySQL-informational?logo=mysql&logoColor=white&color=E48E00" alt="MySQL">
-      <img src="https://img.shields.io/badge/PostgreSQL-informational?logo=postgresql&logoColor=white&color=336791" alt="PostgreSQL">
-      <img src="https://img.shields.io/badge/MsSQL-informational?logo=microsoft-sql-server&logoColor=white&color=CD283A" alt="MsSQL">
-      <img src="https://img.shields.io/badge/MongoDB-informational?logo=mongodb&logoColor=white&color=50B241" alt="MongoDB">
-      <img src="https://img.shields.io/badge/Firebase-informational?&logo=firebase&logoColor=f6820d&color=FFCA28" alt="Firebase">
-      <img src="https://img.shields.io/badge/AWS-informational?&logo=amazon&logoColor=f6820d&color=232E3D" alt="AWS">
-      <img src="https://img.shields.io/badge/Git-informational?logo=git&logoColor=white&color=F05030" alt="Git">
+      <img src="~/assets/mysql.svg" alt="MySQL">
+      <img src="~/assets/postgresql.svg" alt="PostgreSQL">
+      <img src="~/assets/mssql.svg" alt="MsSQL">
+      <img src="~/assets/mongodb.svg" alt="MongoDB">
+      <img src="~/assets/firebase.svg" alt="Firebase">
+      <img src="~/assets/aws.svg" alt="AWS">
+      <img src="~/assets/git.svg" alt="Git">
     </p>
     <p style="margin-top: 30px">
       It's important to note that this is just a list of things I'm already familiar with. I'm happy to acquire new skills
