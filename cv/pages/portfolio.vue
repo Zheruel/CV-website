@@ -63,19 +63,13 @@
           <img id="logo" src="~/assets/tvz.svg" alt="TVZ logo">
           <div id="positionInfo">
             <p><a href="https://www.tvz.hr/" target="_blank"> Zagreb University Of Applied Sciences </a></p>
-            <p>Bachelor Of Information Technology</p>
+            <p>Bachelor Of Information Technology, GPA: 87.1/100</p>
             <p><i>2017-2020</i></p>
           </div>
         </div>
         <ul id="responsibilityList">
           <li>
-            Simultaneously worked as a Software Developer in the industry.
-          </li>
-          <li>
             Bachelor's thesis was noted for excellence by the commission.
-          </li>
-          <li>
-            Created many interesting side projects.
           </li>
         </ul>
       </div>

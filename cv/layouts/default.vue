@@ -30,7 +30,7 @@
             Tin Zeljar
           </p>
           <p id="title">
-            Full Stack Software Developer
+            Full Stack Software Engineer
           </p>
           <ul id="linkCollection">
             <NuxtLink id="nuxtLink" to="/portfolio">
