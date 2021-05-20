@@ -21,17 +21,16 @@
         </div>
         <ul id="responsibilityList">
           <li>
-            Handling full software project lifecycles from the initial discussion with the clients to
-            defining both technical and business requirements.
+            Working closely with the clients to define both technical and business requirements.
           </li>
           <li>
-            Producing wireframes and technical specifications.
+            Researching new tools & technologies.
           </li>
           <li>
-            Recommending appropriate technologies and architectural solutions to the presented problem.
+            Taking care of all of the System/Software Design & Architecture for the project.
           </li>
           <li>
-            Providing guidance and support to the development team.
+            Leading the development effort together with project and account managers.
           </li>
         </ul>
       </div>
@@ -46,11 +45,12 @@
         </div>
         <ul id="responsibilityList">
           <li>
-            Initially worked on small scale Full Stack projects.
+            Initially worked on various projects using full stack technologies.
           </li>
           <li>
-            Later worked on developing and maintaining an enterprise level web application used by the
-            croatian government (e-fondovi) which was one of the companys' most important projects.
+            Later worked as part of a team that developed and maintained an enterprise level web application used by the
+            croatian government (<a id="mtColor" href="https://efondovi.mrrfeu.hr/MISCMS">e-fondovi</a>)
+            which was the most important project of the company at the time.
           </li>
         </ul>
       </div>

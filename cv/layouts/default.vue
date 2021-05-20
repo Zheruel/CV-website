@@ -14,7 +14,7 @@
         <NuxtLink id="nuxtLink" to="/contact">
           Contact me
         </NuxtLink>
-        <a id="nuxtLink" href="https://drive.google.com/file/d/1rlqsZ7fER3EZJ4cWicx-g_y1o3CBoj7D/view?usp=sharing">
+        <a id="nuxtLink" href="https://drive.google.com/file/d/1rlqsZ7fER3EZJ4cWicx-g_y1o3CBoj7D/view?usp=sharing" target="__blank">
           My cv
         </a>
       </div>
@@ -48,7 +48,7 @@
                 Contact me
               </li>
             </NuxtLink>
-            <a id="nuxtLink" href="https://drive.google.com/file/d/1rlqsZ7fER3EZJ4cWicx-g_y1o3CBoj7D/view?usp=sharing">
+            <a id="nuxtLink" href="https://drive.google.com/file/d/1rlqsZ7fER3EZJ4cWicx-g_y1o3CBoj7D/view?usp=sharing" target="__blank">
               <li>
                 My CV
               </li>

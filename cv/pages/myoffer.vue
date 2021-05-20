@@ -13,63 +13,67 @@
     </p>
     <p><b>I can help you with all sides of your project:</b></p>
     <ul id="competenceList">
-      <li>developing the front-end,</li>
-      <li>developing the back-end,</li>
-      <li>system/software design & architecture</li>
+      <li>developing the back-end and front-end,</li>
+      <li>system/software design & architecture,</li>
       <li>database design & implementation,</li>
-      <li>researching new technologies,</li>
+      <li>researching tools & technologies,</li>
       <li>verifying good UI/UX design,</li>
-      <li>communicating with clients</li>
-      <li>mentoring junior teamates</li>
-      <li>estimating tasks</li>
-      <li>setting up the CI/CD</li>
+      <li>communicating with clients,</li>
+      <li>mentoring the team,</li>
+      <li>estimating tasks,</li>
+      <li>setting up the CI/CD,</li>
+      <li>leading, launching and monitoring the project.</li>
     </ul>
     <p><i>Call me a Swiss Army Knife in terms of software.</i></p>
     <hr>
     <h2>Technologies</h2>
     <p>
-      Front-end:
-      <img src="~/assets/html.svg" alt="Html5/Css3">
-      <img src="~/assets/sass.svg" alt="SASS/SCSS">
-      <img src="~/assets/javascript.svg" alt="javascript">
-      <img src="~/assets/typescript.svg" alt="typescript">
-      <img src="~/assets/jquery.svg" alt="jQuery">
-      <img src="~/assets/angular.svg" alt="Angular">
-      <img src="~/assets/vue.svg" alt="Vue.js">
-      <img src="~/assets/nuxt.svg" alt="Nuxt.js">
-      <img src="~/assets/react.svg" alt="React">
+      <b>Front-end:</b>
+      <img alt="HTML/CSS" src="~/assets/html.svg">
+      <img alt="SASS/SCSS" src="~/assets/sass.svg">
+      <img alt="JavaScript" src="~/assets/javascript.svg">
+      <img alt="TypeScript" src="~/assets/typescript.svg">
+      <img alt="jQuery" src="~/assets/jquery.svg">
+      <img alt="Angular" src="~/assets/angular.svg">
+      <img alt="Vue" src="~/assets/vue.svg">
+      <img alt="Nuxt" src="~/assets/nuxt.svg">
     </p>
     <p>
-      Back-end/desktop:
-      <img src="~/assets/clang.svg" alt="c/c++">
-      <img src="~/assets/csharplang.svg" alt="c#">
-      <img src="~/assets/aspnet.svg" alt="ASP.NET">
-      <img src="~/assets/python.svg" alt="python">
-      <img src="~/assets/django.svg" alt="Django">
-      <img src="~/assets/nodejs.svg" alt="Node.js">
-      <img src="~/assets/php.svg" alt="php">
+      <b>Back-end/desktop:</b>
+      <img alt="C++" src="~/assets/c++.svg">
+      <img alt="C#" src="~/assets/csharp.svg">
+      <img alt="ASP.NET" src="~/assets/aspnet.svg">
+      <img alt="Python" src="~/assets/python.svg">
+      <img alt="Django" src="~/assets/django.svg">
+      <img alt="Node" src="~/assets/node.svg">
+      <img alt="PHP" src="~/assets/php.svg">
     </p>
     <p>
-      Database:
-      <img src="~/assets/mysql.svg" alt="MySQL">
-      <img src="~/assets/postgresql.svg" alt="PostgreSQL">
-      <img src="~/assets/mssql.svg" alt="MsSQL">
-      <img src="~/assets/mongodb.svg" alt="MongoDB">
-      <img src="~/assets/firebase.svg" alt="Firebase">
+      <b>Database:</b>
+      <img alt="MySQL" src="~/assets/mysql.svg">
+      <img alt="PostgreSQL" src="~/assets/postgresql.svg">
+      <img alt="MSSQL" src="~/assets/mssql.svg">
+      <img alt="MongoDB" src="~/assets/mongodb.svg">
     </p>
     <p>
-      Other:
-      <img src="~/assets/aws.svg" alt="AWS">
-      <img src="~/assets/git.svg" alt="Git">
+      <b>Other:</b>
+      System/Software Design & Architecture,
+      Git,
+      Postman,
+      Balsamiq,
+      Amazon Web Services,
+      Google FireBase,
+      Docker.
     </p>
     <p style="margin-top: 30px">
-      It's important to note that this is just a list of things I'm already familiar with. I'm happy to acquire new skills
-      and expand my knowledge for any potential future projects. The lessons I learned while using these technologies
-      will drastically cut my learning curve.
+      It's important to note that this is just a list of things I'm already familiar with. I can easily get used to
+      different technologies for any potential future projects in a matter of days. The lessons I learned while using these technologies
+      always drastically cut my learning curve. I look at life as a continous learning process and am always striving to get better.
     </p>
     <p>
-      I believe my biggest strengths are my strong problem solving skills and my willingness to adapt to any situation, no matter
-      how difficult it may seem.
+      The most valuable things that I bring to the table are my strong problem solving & communication skills. They let me focus on the
+      big picture and come up with creative solutions for any roadblocks on the way. I make sure that the projects I work on always
+      have continous and consistent progress.
     </p>
     <hr>
     <p>
