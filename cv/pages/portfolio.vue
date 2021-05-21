@@ -76,7 +76,121 @@
     </div>
     <hr>
     <h3>Projects</h3>
-    <p>Coming in a few days (for now check my GitHub)</p>
+    <div id="projectMain">
+      <div id="projectContent">
+        <div id="projectTitle">
+          <a id="mtColor">
+            Menza Scraper
+          </a>
+        </div>
+        <div id="projectDescription">
+          Web Scraping tool created using C# and Windows Forms. It's a completely browserless scraper and it uses the system.net.http
+          library for sending HTTP requests and the HTML Agility Pack for parsing scraped information.
+          This project is not made using any official API. It uses my own exploit to grab student receipt information.
+          Scraped information is saved into a XML document and the GUI lets you perform some basic data filtering & analysis.
+        </div>
+        <div id="technologyContainer">
+          <div id="technologyTitle">
+            Technologies
+          </div>
+          <div id="technologyList">
+            <img alt="Python" src="~/assets/csharp.svg">
+          </div>
+        </div>
+        <a
+          href="https://github.com/Zheruel/PHP-News-Website"
+          target="__blank"
+        >
+          <vs-button
+            class="codeButton"
+            size="l"
+          >
+            <font-awesome-icon class="codeIcon" :icon="['fab', 'github']" />
+            See More
+          </vs-button>
+        </a>
+      </div>
+      <div id="projectImage">
+        <img src="~/assets/menzascraper.jpg" alt="Menza Scraper">
+      </div>
+    </div>
+    <hr>
+    <div id="projectMain">
+      <div id="projectContent">
+        <div id="projectTitle">
+          <a id="mtColor">
+            News Website
+          </a>
+        </div>
+        <div id="projectDescription">
+          News Website with an admin panel, categories, articles and more created using PHP as the back-end and and HTML/CSS + vanilla
+          JavaScript as the front-end. This project also uses a MySQL database and it was my final assignment for the Web Application
+          Programming class while pursuing my degree.
+        </div>
+        <div id="technologyContainer">
+          <div id="technologyTitle">
+            Technologies
+          </div>
+          <div id="technologyList">
+            <img alt="Python" src="~/assets/php.svg">
+            <img alt="MySQL" src="~/assets/mysql.svg">
+          </div>
+        </div>
+        <a
+          href="https://github.com/Zheruel/PHP-News-Website"
+          target="__blank"
+        >
+          <vs-button
+            class="codeButton"
+            size="l"
+          >
+            <font-awesome-icon class="codeIcon" :icon="['fab', 'github']" />
+            See More
+          </vs-button>
+        </a>
+      </div>
+      <div id="projectImage">
+        <img src="~/assets/tvzvijesti.jpg" alt="News Website">
+      </div>
+    </div>
+    <hr>
+    <div id="projectMain">
+      <div id="projectContent">
+        <div id="projectTitle">
+          <a id="mtColor" href="https://github.com/Zheruel/Python-hangman">
+            Python Hangman
+          </a>
+        </div>
+        <div id="projectDescription">
+          Playable hangman game created using Python. It uses the Requests library to scrape a list of the most common words
+          from the internet and then the BeautifulSoup library to parse the scraped HTML code and create a list of the words to be used
+          for the game.
+        </div>
+        <div id="technologyContainer">
+          <div id="technologyTitle">
+            Technologies
+          </div>
+          <div id="technologyList">
+            <img alt="Python" src="~/assets/python.svg">
+          </div>
+        </div>
+        <a
+          href="https://github.com/Zheruel/PHP-News-Website"
+          target="__blank"
+        >
+          <vs-button
+            class="codeButton"
+            size="l"
+          >
+            <font-awesome-icon class="codeIcon" :icon="['fab', 'github']" />
+            See More
+          </vs-button>
+        </a>
+      </div>
+      <div id="projectImage">
+        <img src="~/assets/hangman.jpg" alt="Python Hangman">
+      </div>
+    </div>
   </div>
 </template>
 
@@ -87,6 +201,44 @@ export default {
 </script>
 
 <style>
+#projectMain {
+  display: flex;
+  flex-direction: row;
+}
+
+#projectContent {
+  width: 50%;
+}
+
+#projectImage {
+  width: 50%;
+  padding-left: 50px;
+}
+
+#projectImage img{
+  max-width: 100%;
+  max-height: 568px;
+}
+
+#projectTitle {
+  font-weight: 500;
+  font-size: 22px;
+}
+
+#projectDescription {
+  margin-top: 20px;
+}
+
+#technologyTitle {
+  font-size: 13px;
+  text-transform: uppercase;
+  padding-bottom: .5em;
+}
+
+#technologyContainer {
+  margin-top: 20px;
+}
+
 #portfolioSection {
   padding: 50px;
   max-width: 1400px;
@@ -141,9 +293,30 @@ export default {
   margin-bottom: 3px;
 }
 
+.codeIcon {
+  margin-right: 5px;
+}
+
+.codeButton {
+  margin-top: 20px;
+}
+
 @media screen and (max-width: 1024px){
   #portfolioSection{
     padding: 30px 20px;
+  }
+
+  #projectMain {
+    flex-direction: column;
+  }
+
+  #projectContent {
+    width: 100%;
+  }
+
+  #projectImage {
+    width: 100%;
+    padding-left: 0;
   }
 }
 </style>
