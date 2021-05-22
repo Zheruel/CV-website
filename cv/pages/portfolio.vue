@@ -79,9 +79,94 @@
     <div id="projectMain">
       <div id="projectContent">
         <div id="projectTitle">
-          <a id="mtColor">
+          <div id="mtColor">
+            Bachelor's Thesis Project
+          </div>
+        </div>
+        <div id="projectDescription">
+          Web shop created using .NET Core as the back-end and JavaScript with JQuery as the front-end. The database is Microsoft SQL
+          Server and I use an ORM called Entity Framework. Postman is used to test the API endpoints. This was part of my Bachelor's
+          thesis and it comes with a full System Design/Architecture seminar.
+        </div>
+        <div id="technologyContainer">
+          <div id="technologyTitle">
+            Technologies
+          </div>
+          <div id="technologyList">
+            <img alt="HTML/CSS" src="~/assets/html.svg">
+            <img alt="JavaScript" src="~/assets/javascript.svg">
+            <img alt="jQuery" src="~/assets/jquery.svg">
+            <img alt="C#" src="~/assets/csharp.svg">
+            <img alt="ASP.net" src="~/assets/aspnet.svg">
+            <img alt="MsSQL" src="~/assets/mssql.svg">
+          </div>
+        </div>
+        <a
+          href="https://github.com/Zheruel/Mr-Robot-Webshop"
+          target="__blank"
+          class="projectLink"
+        >
+          <vs-button
+            class="codeButton"
+            size="l"
+          >
+            <font-awesome-icon class="codeIcon" :icon="['fab', 'github']" />
+            See More
+          </vs-button>
+        </a>
+      </div>
+      <div id="projectImage">
+        <img src="~/assets/webshop.jpg" alt="Webshop">
+      </div>
+    </div>
+    <hr>
+    <div id="projectMain">
+      <div id="projectContent">
+        <div id="projectTitle">
+          <div id="mtColor">
+            Drag & Drop Vue GUI
+          </div>
+        </div>
+        <div id="projectDescription">
+          A very interesting assignment that I've had the pleasure of solving. It's a GUI created in Vue that lets you
+          drag and drop placeholders and then fill them with items, re-order or remove them. This one was very interesting because I solved
+          it without using any 3rd party libraries. A good example of where this kind of technology is used are some of those drag and drop
+          website creation tools such as Wordpress, Wix ect. Code is available upon request.
+        </div>
+        <div id="technologyContainer">
+          <div id="technologyTitle">
+            Technologies
+          </div>
+          <div id="technologyList">
+            <img alt="HTML/CSS" src="~/assets/html.svg">
+            <img alt="JavaScript" src="~/assets/javascript.svg">
+            <img alt="Vue" src="~/assets/vue.svg">
+          </div>
+        </div>
+        <a
+          href="https://i.imgur.com/i8rNcPK.mp4"
+          target="__blank"
+          class="projectLink"
+        >
+          <vs-button
+            class="codeButton"
+            size="l"
+          >
+            View Demo
+          </vs-button>
+        </a>
+      </div>
+      <div id="projectImage">
+        <img src="~/assets/netgenzadatak.jpg" alt="Netgen zadatak">
+      </div>
+    </div>
+    <hr>
+    <div id="projectMain">
+      <div id="projectContent">
+        <div id="projectTitle">
+          <div id="mtColor">
             Menza Scraper
-          </a>
+          </div>
         </div>
         <div id="projectDescription">
           Web Scraping tool created using C# and Windows Forms. It's a completely browserless scraper and it uses the system.net.http
@@ -98,8 +183,9 @@
           </div>
         </div>
         <a
-          href="https://github.com/Zheruel/PHP-News-Website"
+          href="https://github.com/Zheruel/Menza-scraper"
           target="__blank"
+          class="projectLink"
         >
           <vs-button
             class="codeButton"
@@ -118,9 +204,9 @@
     <div id="projectMain">
       <div id="projectContent">
         <div id="projectTitle">
-          <a id="mtColor">
+          <div id="mtColor">
             News Website
-          </a>
+          </div>
         </div>
         <div id="projectDescription">
           News Website with an admin panel, categories, articles and more created using PHP as the back-end and and HTML/CSS + vanilla
@@ -132,13 +218,16 @@
             Technologies
           </div>
           <div id="technologyList">
-            <img alt="Python" src="~/assets/php.svg">
+            <img alt="HTML/CSS" src="~/assets/html.svg">
+            <img alt="JavaScript" src="~/assets/javascript.svg">
+            <img alt="PHP" src="~/assets/php.svg">
             <img alt="MySQL" src="~/assets/mysql.svg">
           </div>
         </div>
         <a
           href="https://github.com/Zheruel/PHP-News-Website"
           target="__blank"
+          class="projectLink"
         >
           <vs-button
             class="codeButton"
@@ -157,9 +246,9 @@
     <div id="projectMain">
       <div id="projectContent">
         <div id="projectTitle">
-          <a id="mtColor" href="https://github.com/Zheruel/Python-hangman">
+          <div id="mtColor">
             Python Hangman
-          </a>
+          </div>
         </div>
         <div id="projectDescription">
           Playable hangman game created using Python. It uses the Requests library to scrape a list of the most common words
@@ -175,8 +264,9 @@
           </div>
         </div>
         <a
-          href="https://github.com/Zheruel/PHP-News-Website"
+          href="https://github.com/Zheruel/Python-hangman"
           target="__blank"
+          class="projectLink"
         >
           <vs-button
             class="codeButton"
@@ -299,6 +389,10 @@ export default {
 
 .codeButton {
   margin-top: 20px;
+}
+
+.projectLink {
+  text-decoration: none;
 }
 
 @media screen and (max-width: 1024px){

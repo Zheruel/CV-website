@@ -1,10 +1,10 @@
 <template>
   <div v-if="isLoaded" id="wrapper">
-    <div id="mobileNav" @click="toggleMobile()">
+    <div id="mobileNav">
       <NuxtLink id="nuxtLink" to="/">
         Home
       </NuxtLink>
-      <div v-if="showMobileMenu" id="mobileNavLinks">
+      <div v-if="showMobileMenu" id="mobileNavLinks" @click="closeMobile()">
         <NuxtLink id="nuxtLink" to="/portfolio">
           Portfolio
         </NuxtLink>
@@ -18,7 +18,7 @@
           My cv
         </a>
       </div>
-      <font-awesome-icon id="mobileNavIcon" :icon="['fa', 'bars']" />
+      <font-awesome-icon id="mobileNavIcon" :icon="['fa', 'bars']" @click="toggleMobile()" />
     </div>
     <div id="sideBar">
       <div id="sideBarOverlay">
@@ -94,6 +94,7 @@ export default {
       switch (this.$nuxt.$route.name) {
         case 'index':
           this.setActiveCategory(0)
+          this.showMobileMenu = false
           break
         case 'portfolio':
           this.setActiveCategory(1)
@@ -141,6 +142,10 @@ export default {
   methods: {
     toggleMobile () {
       this.showMobileMenu = !this.showMobileMenu
+    },
+
+    closeMobile () {
+      this.showMobileMenu = false
     },
 
     setActiveCategory (number) {
@@ -329,10 +334,10 @@ hr {
   }
 
   #mobileNavIcon {
-    font-size: 25px;
+    font-size: 32px;
     position: absolute;
     right: 6px;
-    top: 3px;
+    top: 10px;
   }
 
   #mobileNavIcon:hover {
